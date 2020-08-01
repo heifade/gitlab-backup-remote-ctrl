@@ -1,0 +1,8 @@
+{
+  "server": {
+    "https": false,
+    "pfx": "./**.pfx",
+    "pfxPassword": "****",
+    "port": 81
+  }
+}

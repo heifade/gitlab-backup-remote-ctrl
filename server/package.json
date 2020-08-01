@@ -1,0 +1,59 @@
+{
+  "name": "server",
+  "version": "1.0.0-beta1",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
+  "bin": {
+    "server": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "nyc mocha",
+    "build": "webpack --config webpack.config.ts && node ./tools/build.js",
+    "start": "ts-node ./src/index.ts"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "typings"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/compression": "^1.7.0",
+    "@types/connect-busboy": "^0.0.2",
+    "@types/express": "^4.17.2",
+    "@types/express-ws": "^3.0.0",
+    "@types/lodash": "^4.14.149",
+    "@types/log4js": "^2.3.5",
+    "@types/mocha": "^5.2.7",
+    "@types/moment": "^2.13.0",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^13.1.8",
+    "@types/node-fetch": "^2.5.4",
+    "@types/uuid": "^3.4.7",
+    "@types/webpack": "^4.41.2",
+    "chai": "^4.2.0",
+    "compression": "^1.7.4",
+    "connect-busboy": "^0.0.2",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "file-stream-rotator": "^0.5.7",
+    "lodash": "^4.17.15",
+    "log4js": "^6.1.2",
+    "mocha": "^7.0.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "nyc": "^15.0.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "uuid": "^3.4.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "yymmdd": "^1.0.3"
+  }
+}
